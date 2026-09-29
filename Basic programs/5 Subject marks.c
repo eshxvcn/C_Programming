@@ -2,40 +2,40 @@
 #include<conio.h>
 void main()
 {
-    int S1,S2,S3,S4,S5;
-    float t,avg;
+  int S1,S2,S3,S4,S5;
+  float t,avg;
 
-    printf("enter the values of S1,S2,S3,S4,S5");
-    scanf("%d,%d,%d,%d,%d",&S1,&S2,&S3,&S4,&S5);
+  printf("enter the values of S1,S2,S3,S4,S5");
+  scanf("%d,%d,%d,%d,%d",&S1,&S2,&S3,&S4,&S5);
     
-    t=S1+S2+S3+S4+S5;
-    avg+(float) t/5;
+  t=S1+S2+S3+S4+S5;
+  avg+(float) t/5;
 
-    if (S1>=27 && S2>=27 && S3>=27 && S4>=27 && S5>=27)
+ if (S1>=27 && S2>=27 && S3>=27 && S4>=27 && S5>=27)
 
   {
-    if(avg>=70)
-    printf("%f, Distinction",avg);
+   if(avg>=70)
+   printf("%f, Distinction",avg);
 
-    else if(t>=60 && t<70);
-    printf("%f, First Division",avg);
+   else if(t>=60 && t<70)
+   printf("%f, First Division",avg);
 
-    elseif(t>=50 && t<60);
-    printf("%f, Second division",avg);
+   else if(t>=50 && t<60)
+   printf("%f, Second division",avg);
 
-    elseif(t>=40 && t<50);
-    printf("%f, Third division",avg);
+   else if(t>=40 && t<50)
+   printf("%f, Third division",avg);
 
-    elseif;
-    {printf("%d, FAILED",avg);}
+   else
+   {printf("%d, FAILED",avg);} 
   }
 
-  else 
+ else 
 
-  {printf("FAILED");}
+ {printf("FAILED");}
 
 
-    getch();
+ getch();
 
     
 }

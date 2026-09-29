@@ -9,5 +9,7 @@ void main()
     scanf("%d",&s);
     A=(sqrt(3)/4*s*s);
     printf("The area of the equilateral triangle is %f",A);
+
     getch();
+    
 }

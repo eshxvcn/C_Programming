@@ -10,5 +10,7 @@ void main()
     s=(x+y+z)/2;
     A=sqrt((s-x)*(s-y)*(s-z));
     printf("The area of the scalene triangle is %f",A);
+
     getch();
+    
 }

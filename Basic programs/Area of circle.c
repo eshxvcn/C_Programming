@@ -8,5 +8,7 @@ void main()
     scanf("%d",&r);
     A=3.14*r*r;
     printf("The area of the circle is %f",A);
+
     getch();
+    
 }
