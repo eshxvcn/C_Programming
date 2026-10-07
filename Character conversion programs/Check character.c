@@ -3,7 +3,7 @@
 void main()
 {
     char x;
-    printf("Enter any character");
+    printf("Enter any character: ");
     scanf("%c",&x);
 
     if (x>=97 && x<=122)

@@ -2,14 +2,16 @@
 #include<conio.h>
 void main()
 {
-    int i,n,f=1;
+    int i,n,f,CP;
     printf("Factorial of: ");
     scanf("%d",&n);
-    for(i=1; i<=n; i++)
+    CP=n;
+    for(i=n-1; i=!0; i--)
     {
-        f=f*i;
+        f=n*i;
+        n=f;
     }
 
-    printf("%d! is %d",n,f);
+    printf("%d! is %d",CP,n);
     getch();
 }

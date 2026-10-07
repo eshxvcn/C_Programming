@@ -17,5 +17,6 @@ void main()
     printf("%d is a Palindrome",CP);
     else
     printf("%d is not a Palindrome",CP);
-
+    
+    getch();
 }

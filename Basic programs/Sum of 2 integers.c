@@ -6,6 +6,6 @@ void main()
     printf("enter the values of a and b");
     scanf("%d,%d",&a,&b);
     c=a+b;
-    printf("The greatest of a and b is %d",c);
+    printf("The sum of a and b is %d",c);
     getch();
 }
