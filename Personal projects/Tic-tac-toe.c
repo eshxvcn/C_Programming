@@ -5,9 +5,9 @@ void main()
   char s,n,a=' ',b=' ',c=' ',d=' ',e=' ',f=' ',g=' ',h=' ',i=' ';
   char ch;
 
-  printf("_%c_|_%c_|_%c_\t   _a_|_b_|_c_\n",a,b,c);
-  printf("_%c_|_%c_|_%c_  <===  _d_|_e_|_f_\n ",d,e,f);
-  printf("%c | %c | %c \t    g | h | i \n\n ",g,h,i);
+  printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
+  printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
+  printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
     
   for(s=0; s<=9 ; s=s)
  {
@@ -55,9 +55,9 @@ void main()
    default:printf("Invalid choice");
    }
 
-   printf("_%c_|_%c_|_%c_\t   _a_|_b_|_c_\n",a,b,c);
-   printf("_%c_|_%c_|_%c_  <===  _d_|_e_|_f_\n ",d,e,f);
-   printf("%c | %c | %c \t    g | h | i \n\n ",g,h,i);
+   printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
+   printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
+   printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
 
    s++;
 
@@ -115,9 +115,9 @@ void main()
    default:printf("Invalid choice");
    }
 
-   printf("_%c_|_%c_|_%c_\t   _a_|_b_|_c_\n",a,b,c);
-   printf("_%c_|_%c_|_%c_  <===  _d_|_e_|_f_\n ",d,e,f);
-   printf("%c | %c | %c \t    g | h | i \n\n ",g,h,i);
+   printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
+   printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
+   printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
    s++;
 
    if( (a=='X' && b=='X' && c=='X') || (d=='X' && e=='X' && f=='X') || (g=='X' && h=='X' && i=='X') || (a=='X' && d=='X' && g=='X') || (b=='X' && e=='X' && h=='X') || (c=='X' && f=='X' && i=='X') || (a=='X' && e=='X' && i=='X') || (c=='X' && e=='X' && g=='X'))
