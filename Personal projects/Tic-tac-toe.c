@@ -4,7 +4,7 @@ void main()
 {
   char s,n,a=' ',b=' ',c=' ',d=' ',e=' ',f=' ',g=' ',h=' ',i=' ';
   char ch;
-
+  printf("\n\n");
   printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
   printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
   printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
@@ -13,7 +13,7 @@ void main()
  {
     printf("Choose where to put 'X' : ");
     scanf(" %c",&ch);
-    printf("\n\n\n");
+    printf("\n\n");
     switch(ch)
    {
    case 'a':
@@ -73,7 +73,7 @@ void main()
 
     printf("Choose where to put 'O' : ");
     scanf(" %c",&ch);
-    printf("\n\n\n");
+    printf("\n\n");
     switch(ch)
    {
    case 'a':
