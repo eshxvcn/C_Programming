@@ -15,8 +15,7 @@ void main()
     else if(x>=48 && x<=57)
     printf("It is a digit");
 
-    else 
-    printf("It is a special symbol");
+    else printf("It is a special symbol");
 
     getch();
     

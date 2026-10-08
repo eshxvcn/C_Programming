@@ -7,9 +7,9 @@ void main()
  printf("Enter a and b value\n");
  scanf("%d%d",&a, &b);
  printf("MENU\n");
- printf("1. Addition\n 2. Subtraction\n 3. Multiplication\n 4.Division\n 5.Remainder\n");
+ printf("1. Addition\n2. Subtraction\n3. Multiplication\n4.Division\n5.Remainder\n");
  printf("Enter your choice: ",ch);
- scanf(" %d ",&ch);
+ scanf("%d",&ch);
  switch(ch)
   {
    case 1: (c=a+b);
