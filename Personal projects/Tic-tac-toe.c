@@ -2,16 +2,17 @@
 #include<conio.h>
 void main()
 {
-  char s,n,a=' ',b=' ',c=' ',d=' ',e=' ',f=' ',g=' ',h=' ',i=' ';
+  char s,m='0',n,a=' ',b=' ',c=' ',d=' ',e=' ',f=' ',g=' ',h=' ',i=' ';
   char ch;
   printf("\n\n");
   printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
   printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
   printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
     
-  for(s=0; s<=9 ; s=s)
+  for(s=0; s<=50; s=s)
  {
-    printf("Choose where to put 'X' : ");
+    printf("(Note: Press 'n' for New Game)\n");
+    printf(" Choose where to put 'X' : ");
     scanf(" %c",&ch);
     printf("\n\n");
     switch(ch)
@@ -52,9 +53,25 @@ void main()
    i='X';
    break;
 
+   case 'n':
+   m='1';
+   a=' ';b=' ';c=' ';d=' ';e=' ';f=' ';g=' ';h=' ';i=' ';
+   s=0;
+   printf("\n********************************");
+   printf("\n******** [Game aborted] ********");
+   printf("\n********************************\n\n");
+   printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
+   printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
+   printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
+   break;
+
    default:printf("Invalid choice");
    }
 
+   if(m!='0')
+   continue;
+   else
+   {
    printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
    printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
    printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
@@ -68,10 +85,10 @@ void main()
 
    if(s>=9)
    break;
- 
+   }
    
-
-    printf("Choose where to put 'O' : ");
+    printf("(Note: Press 'n' for New Game)\n");
+    printf(" Choose where to put 'O' : ");
     scanf(" %c",&ch);
     printf("\n\n");
     switch(ch)
@@ -112,9 +129,25 @@ void main()
    i='O';
    break;
 
+   case 'n':
+   m='1';
+   a=' ';b=' ';c=' ';d=' ';e=' ';f=' ';g=' ';h=' ';i=' ';
+   s=0;
+   printf("\n********************************");
+   printf("\n******** [Game aborted] ********");
+   printf("\n********************************\n\n");
+   printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
+   printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
+   printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
+   break;
+
    default:printf("Invalid choice");
    }
 
+   if(m!='0')
+   continue;
+   else
+   {
    printf("_a_|_b_|_c_\t   _%c_|_%c_|_%c_\n",a,b,c);
    printf("_d_|_e_|_f_  ===>  _%c_|_%c_|_%c_\n ",d,e,f);
    printf("g | h | i \t    %c | %c | %c \n\n ",g,h,i);
@@ -127,10 +160,11 @@ void main()
 
    if(s>=9)
    break;
+   }
 
   }
-
- if( (a=='X' && b=='X' && c=='X') || (d=='X' && e=='X' && f=='X') || (g=='X' && h=='X' && i=='X') || (a=='X' && d=='X' && g=='X') || (b=='X' && e=='X' && h=='X') || (c=='X' && f=='X' && i=='X') || (a=='X' && e=='X' && i=='X') || (c=='X' && e=='X' && g=='X'))
+  
+  if( (a=='X' && b=='X' && c=='X') || (d=='X' && e=='X' && f=='X') || (g=='X' && h=='X' && i=='X') || (a=='X' && d=='X' && g=='X') || (b=='X' && e=='X' && h=='X') || (c=='X' && f=='X' && i=='X') || (a=='X' && e=='X' && i=='X') || (c=='X' && e=='X' && g=='X'))
   printf("\n******** 'X' person WINS! ********");
   else if( (a=='O' && b=='O' && c=='O') || (d=='O' && e=='O' && f=='O') || (g=='O' && h=='O' && i=='O') || (a=='O' && d=='O' && g=='O') || (b=='O' && e=='O' && h=='O') || (c=='O' && f=='O' && i=='O') || (a=='O' && e=='O' && i=='O') || (c=='O' && e=='O' && g=='O'))
   printf("\n******* 'O' person WINS! *******");
