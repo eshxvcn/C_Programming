@@ -6,27 +6,27 @@ void main()
     printf("Enter the order of Matrix A and Matrix B (Square Matrices): ");
     scanf("%d",&sz);
 
-    printf("Enter Matrix A values: ");
+    printf("\nEnter Matrix A values: ");
     for(i=0; i<sz; i++)
     {
         for(j=0; j<sz; j++)
         {
-        printf("Enter a[%d][%d]");
+        printf("Enter a[%d][%d] = ");
         scanf("%d",&a[i][j]);
         }
     }
 
-    printf("Enter Matrix B values: ");
+    printf("\nEnter Matrix B values: ");
     for(i=0; i<sz; i++)
     {
         for(j=0; j<sz; j++)
         {
-        printf("Enter b[%d][%d]");
+        printf("Enter b[%d][%d] = ");
         scanf("%d",&b[i][j]);
         }
     }
 
-    printf("The product of the matrices is:\n");
+    printf("\nThe product of the matrices is:\n");
     for(i=0; i<sz; i++)
     {
         for(j=0; j<sz; j++)

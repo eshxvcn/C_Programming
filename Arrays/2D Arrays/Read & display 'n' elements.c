@@ -10,12 +10,12 @@ void main()
     {
         for(j=0; j<c; j++)
         {
-        printf("Enter a[%d][%d]");
+        printf("Enter a[%d][%d] = ");
         scanf("%d",&a[i][j]);
         }
     }
 
-    printf("The array is\n");
+    printf("\nThe array is:\n");
     for(i=0; i<r; i++)
     {
         for(j=0; j<c; j++)

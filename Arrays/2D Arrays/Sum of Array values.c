@@ -10,7 +10,7 @@ void main()
     {
         for(j=0; j<c; j++)
         {
-          printf("Enter a[%d][%d]");
+          printf("Enter a[%d][%d] = ");
           scanf("%d",&a[i][j]);
         }
     }
@@ -22,7 +22,7 @@ void main()
           sum=sum+a[i][j];
         }
     }
-    printf("Display %d",sum);
+    printf("\nThe sum is %d",sum);
 
     getch();
 

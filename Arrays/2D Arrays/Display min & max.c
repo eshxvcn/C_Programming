@@ -10,10 +10,11 @@ void main()
     {
         for(j=0; j<c; j++)
         {
-        printf("Enter a[%d][%d]");
+        printf("Enter a[%d][%d] = ");
         scanf("%d",&a[i][j]);
         }
     }
+    
     max=a[0][0];
     min=a[0][0];
 
@@ -28,8 +29,8 @@ void main()
         }
     }
 
-    printf("Minimum=%d\n",min);
-    printf("Maximum=%d\n",max);
+    printf("Minimum = %d\n",min);
+    printf("Maximum = %d\n",max);
 
 
     getch();

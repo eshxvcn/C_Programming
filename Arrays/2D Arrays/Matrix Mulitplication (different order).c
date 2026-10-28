@@ -11,27 +11,27 @@ void main()
 
     if(r1==c2)
   {  
-    printf("Enter Matrix A values: ");
+    printf("\nEnter Matrix A values:\n");
     for(i=0; i<r1; i++)
     {
         for(j=0; j<c1; j++)
         {
-        printf("Enter a[%d][%d]");
+        printf("Enter a[%d][%d] = ");
         scanf("%d",&a[i][j]);
         }
     }
 
-    printf("Enter Matrix B values: ");
+    printf("\nEnter Matrix B values:\n");
     for(i=0; i<r2; i++)
     {
         for(j=0; j<c2; j++)
         {
-        printf("Enter b[%d][%d]");
+        printf("Enter b[%d][%d] = ");
         scanf("%d",&b[i][j]);
         }
     }
 
-    printf("The product of the matrices is:\n");
+    printf("\nThe product of the matrices is:\n");
     for(i=0; i<r1; i++)
     {
         for(j=0; j<c2; j++)
@@ -48,7 +48,7 @@ void main()
 
   }
   
-    else printf("Multiplication of these Matrices is not possible");
+    else printf("\nMultiplication of the Matrices is not possible");
 
     getch();
 
