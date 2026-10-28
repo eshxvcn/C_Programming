@@ -8,7 +8,7 @@ void main()
 
     for(i=0; i<n; i++)
     {
-        printf("Enter a[%d]");
+        printf("Enter a[%d] = ");
         scanf("%d",&a[i]);
     }
 
@@ -23,8 +23,8 @@ void main()
         min=a[i];
     }
 
-    printf("Minimum=%d\n",min);
-    printf("Maximum=%d\n",max);
+    printf("Minimum = %d\n",min);
+    printf("Maximum = %d\n",max);
 
 
     getch();
