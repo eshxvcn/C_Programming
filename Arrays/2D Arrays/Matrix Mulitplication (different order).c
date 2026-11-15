@@ -10,13 +10,14 @@ void main()
 
 
     if(r1==c2)
+    
   {  
     printf("\nEnter Matrix A values:\n");
     for(i=0; i<r1; i++)
     {
         for(j=0; j<c1; j++)
         {
-        printf("Enter a[%d][%d] = ");
+        printf("Enter a[%d][%d] = ",i,j);
         scanf("%d",&a[i][j]);
         }
     }
