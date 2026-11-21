@@ -2,7 +2,7 @@
 #include<conio.h>
 void main()
 {
-    int a[100],i,j,n,s,min;
+    int a[100],i,j,n,s,x,min;
     printf("Enter no of elements: ");
     scanf("%d",&n);
 
@@ -15,16 +15,18 @@ void main()
 
     for(j=0; j<n; j++)
     {
-     min=a[0];
-     for(i=0; i<n; i++)
+     min=a[j];
+     x=j;
+     for(i=j; i<n; i++)
      {
-        if(a[i]<min)
-        min=a[i];
+        if(min>a[i])
+        {min=a[i];
+        x=i;
+        }
      }
-     i--;
      s=a[j];
-     a[j]=a[i];
-     a[i]=s;
+     a[j]=a[x];
+     a[x]=s;
     }
     
     printf("Sorted array:\n");

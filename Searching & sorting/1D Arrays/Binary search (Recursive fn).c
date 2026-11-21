@@ -15,11 +15,13 @@ void main()
     scanf("%d",&key);
     low=0;
     high=n-1;
-    r=binsearch(a,n,key,low,high);
+    r = binsearch(a,n,key,low,high);
     if(r==-1)
     printf("Element not found");
     else
     printf("The element is at index position %d",r);
+    
+    return 0;
 }
 
 int binsearch(int a[],int n,int key,int low, int high)
@@ -33,7 +35,8 @@ int binsearch(int a[],int n,int key,int low, int high)
             if(key==a[mid])
             return mid;
             else if(key>a[mid])
-            binsearch(a,n,key,mid+1,high);
-            else binsearch(a,n,key,low,mid-1);
+            return binsearch(a,n,key,mid+1,high);
+            else
+            return binsearch(a,n,key,low,mid-1);
         }
 }
